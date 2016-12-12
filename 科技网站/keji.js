@@ -34,13 +34,25 @@ window.onload = function() {
 		for(var j = 0; j < i_meau.length; j++) {
 			i_xyd[j].style.background = "";
 			i_meau[j].style.color = "rgb(0,71,197)";
-			document.getElementById('plane1').style.animation="";
+			
 		}
 		i_meau[index].style.color = "black";
 		i_xyd[index].style.background = "orange";
 		if(index==1){
-			console.log("2333");
 			document.getElementById('plane1').style.animation="plane1 1s linear 0s 1 forwards";
+			document.getElementById('plane3').style.animation="plane3 1s linear 0s 1 forwards";
+		}else{
+			document.getElementById('plane1').style.animation="";
+			document.getElementById('plane3').style.animation="";
+		}
+		if(index==2){
+			document.getElementById('pancel1').style.animation="pancel1 1s linear 0s 1 forwards";
+			document.getElementById('pancel2').style.animation="pancel2 1s linear 0s 1 forwards";
+			document.getElementById('pancel3').style.animation="pancel3 1s linear 0s 1 forwards";
+		}else{
+			document.getElementById('pancel1').style.animation="";
+			document.getElementById('pancel2').style.animation="";
+			document.getElementById('pancel3').style.animation="";
 		}
 		var i_yidong = index * 60;
 		animate($("i_xjt"), {
