@@ -23,7 +23,7 @@ html,body{
 	height: 100%;
 	width: 100%;
 	border: 1px solid green;
-	/*position: absolute;*/
+	/*position: relative;*/
 }
 #i_zym>ul>li:nth-child(1){
 	position: absolute;
@@ -62,6 +62,7 @@ html,body{
 	position: fixed;
 	top:0px;
 	cursor: pointer;
+	background: white;
 	z-index: 1000000000;
     
 }
@@ -259,15 +260,93 @@ z-index: 1;
 	
 	
 	}
-
-
-
-
-
-
-
-
-
+.no2{
+	width: 1500px;
+	height: 900px;
+	position: absolute;
+	left: 50%;
+	margin-left: -750px;
+	background: url(images/bg5.jpg);
+}
+.zxh_englishBig{
+	font-size: 5em;
+	color: rgb(0,158,224);
+	/*border: 1px solid white;*/
+	position: absolute;
+	left: 50px;
+	top: 250px;
+}
+.zxh_englishSmall{
+	width: 410px;
+	height: 165px;
+	color: white;
+	/*border: 1px solid white;*/
+	position: absolute;
+	left: 50px;
+	top: 500px;
+}
+.zxh_jiugongge{
+	width: 500px;
+	height: 370px;
+	/*line-height: 370px;*/
+	/*border: 1px solid white;*/
+	position: absolute;
+	left: 800px;
+	top: 300px;
+}
+.zxh_jiugongge>div{
+	float: left;
+	width: 122px;
+	height: 130px;
+	/*line-height: 130px;*/
+	/*border: 1px solid white;*/
+	position: relative;
+	transform-style: preserve-3d;
+	transition: all 1s linear 0s;
+}
+.zxh_jiugongge>div>img{
+	backface-visibility: hidden;
+	position: absolute;
+	left: 30px;
+	top: 30px;
+	transform: rotateY(0deg);
+}
+.zxh_jiugongge>div:hover{
+	transform: rotateY(180deg);
+}
+.zxh_jiugongge>div>div{
+	width: 122px;
+	height: 130px;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+	color: white;
+	background: blue;
+	position: absolute;
+}
+#plane1{
+	position: absolute;
+	left: 270px;
+	top: 125px;
+	/*animation: plane1 1s linear 0s 1 forwards;*/
+}
+#plane3{
+	position: absolute;
+	left: 300px;
+	top: 600px;
+	/*animation: plane3 1s linear 0s 1 forwards;*/
+}
+@-webkit-keyframes plane1{
+	from{left: 220px;
+	          top: 70px;}
+	to{left: 270px;
+	    top: 125px;}
+}
+@-webkit-keyframes plane3{
+	from{left: 360px;
+	          top: 540px;}
+	to{left: 300px;
+	    top: 600px;}
+}
 
 
 
