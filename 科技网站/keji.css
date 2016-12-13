@@ -477,7 +477,7 @@ z-index: 1;
  #x_cover{
 	width:920px;
 	height:448px;
-	opacity:0.5;
+	opacity:0.2;
 	cursor: pointer;
 }
 .x_bg5 .x_team, #x_cover{
@@ -497,7 +497,7 @@ z-index: 1;
 #x_wir{
 	width:380px;
 	height:150px;
-	border:1px solid red;
+	/*border:1px solid red;*/
 	position: absolute;
 	top:18%;
 	left:20%;

@@ -195,6 +195,28 @@ window.onload = function() {
 	}
 	i_fun1();
 	//		悬浮暂停函数
+	//第五个页面的js
+	  var xteam = $("x_team");
+	  var xcover = $("x_cover");
+	  var xul = xcover.children;
+	  var xlist = xul[0].children;
+	  // console.dir(xlist);
+	  var x_sind = $("x_sind");
+      for(var i = 0;i < xlist.length;i++){
+      	xlist[i].onmouseover = function(){
+      		for(var i = 0;i < xlist.length;i++){
+      			animate(xlist[i],{opacity:100});
+      		}
+
+      		animate(this,{opacity:0});
+      	}
+      	xlist[i].onmouseout = function(){
+      		for(var i = 0;i < xlist.length;i++){
+                animate(xlist[i],{opacity:0});
+      		}
+            animate(this,{opacity:0});
+      	}
+      }
 }
 
 function scroll() {
