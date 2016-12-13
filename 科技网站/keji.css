@@ -454,8 +454,85 @@ z-index: 1;
 		transform: rotateY(180deg);
 	}
 }
+/*第五个页面的css*/
 
+.x_box{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+.x_bg5{
+	width:1500px;
+	height:800px;
+	position:absolute;
+	top:60px;
+	left: 50%;
+	margin-left: -750px;
+	border:1px solid blue;
+	}
+.x_bg5 .x_img{
+	width:100%;
+	height:100%;
+}
+ #x_cover{
+	width:920px;
+	height:448px;
+	opacity:0.5;
+	cursor: pointer;
+}
+.x_bg5 .x_team, #x_cover{
+	position:absolute;
+	top:43%;
+	left:50%;
+	margin-left:-472px;
+}
+#x_cover .x_ls{
+     float:left;
+	width:115px;
+	height:448px;
+	background:grey;
+	z-index: 10;
+}
 
+#x_wir{
+	width:380px;
+	height:150px;
+	border:1px solid red;
+	position: absolute;
+	top:18%;
+	left:20%;
+	font-size: 5em;
+	color:rgb(0,173,220);
+	animation: weiyi1 1s linear 0s;
+}
+@-webkit-keyframes weiyi1{
+	from{transform: translateX(-150px);}
+	to{transform: translateX(0);}
+}
+#x_sind{
+	width:350px;
+	height:180px;
+	/*border:1px solid red;*/
+	position: absolute;
+	top:18%;
+	right:15%;
+	color:white;
+	animation: weiyi2 1s linear 0s;
+	/*animation: pwenzi 1s linear 1s  infinite alternate;*/
+}
+@-webkit-keyframes weiyi2{
+	from{transform: translateX(150px);}
+	to{transform: translateX(0);}
+}
+#x_sind>p{
+	margin:8px;
+	font-size: 13px;
+	animation: pwenzi 1s linear 1s  infinite alternate;
+}
+@-webkit-keyframes pwenzi{
+	from{transform: translateZ(0);box-shadow:0 0 10px 0px white;}
+	to{transform: translateZ(-5px);box-shadow: 0 0 10px 0px rgb(0,173,220);}
+}
 
 
 
